@@ -1,0 +1,15 @@
+{
+    "port": 3000,
+    "gameSettings": {
+        "fps": 20,
+        "gameCountdown": 10,
+        "ballMoveSpeed": 1,
+        "paddleMoveSpeed": 1
+    },
+    "canvasSettings":{
+         "canvasWidth" : 600,
+         "canvasHeight" : 300,
+         "gridSizeX" : 20,
+         "gridSizeY" : 20
+    }
+}

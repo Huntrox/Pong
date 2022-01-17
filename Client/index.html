@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pong</title>  
+</head>
+<body>
+  <div id="titleScreen" class="h-100">
+    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+      <h1 class="Text Title">JUST A PONG</h1>
+      <button id="startBtn" class="btn .text-light">Start</button>
+      <button id="joinBtn" class="btn">Join</button>
+    </div>
+  </div>
+  <div id="gameScreen" class="h-100">
+    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+      <h1 class="Text Title">JUST A PONG</h1>
+      <h1 class="Text"><span id="p1" class="Text"></span> : <span id="p2"
+          class="Text"></span></h1>
+      <canvas id="canvas" class="gameCanvas"></canvas>
+      <h1 id="gameState" class="Text ">waiting for other players to join</h1>
+      <button id="quitBtn" class="btn">Quit</button>
+    </div>
+  </div>
+  <div id="lobbyScreen" class="h-100">
+    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+      <h1 class="Text Title">Lobby</h1>
+      <div id="roomsContainer">
+        <div id="roomElement" class="d-flex flex-row"> 
+          <h1 id="RoomText">1/2</h1>
+          <div style="width:60px; flex: 5;"></div>
+          <button id="joinRoombtn">Join</button>
+        </div>
+      </div>
+      <button id="backBtn" class="btn">Back</button>
+    </div>
+  </div>
+  <h1 id="author" class="Text">MadeByHuntrox</h1>
+  <!-- <script src="../Server/node_modules/socket.io/client-dist/socket.io.js"></script> -->
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
